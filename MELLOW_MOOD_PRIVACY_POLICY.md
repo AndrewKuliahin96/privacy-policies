@@ -72,8 +72,9 @@ wording stays in this file's history.
 
 ## Contact
 
-Questions about this policy: **<replace with the contact address you want to
-publish>**
+Questions about this policy can go to the developer contact address shown on
+the app's Google Play listing, under **Contact the developer**.
 
-Google Play requires a contact address on the store listing anyway, so it is
-worth using the same one here.
+One address, kept in one place, so it cannot fall out of step with the one the
+store shows. To publish a direct address here as well, replace this paragraph
+with it.
