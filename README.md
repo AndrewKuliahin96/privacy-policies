@@ -6,6 +6,7 @@ own — app stores want a direct URL, not a page you have to navigate from.
 | App | Policy |
 | --- | --- |
 | Mellow Mood Tracker (Android, iOS) | [MELLOW_MOOD_PRIVACY_POLICY.md](MELLOW_MOOD_PRIVACY_POLICY.md) |
+| Habit Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) |
 
 ## Adding another app
 
@@ -19,7 +20,18 @@ A privacy policy is the one document that becomes a lie by standing still. When
 an app gains a permission, an SDK, or anything that leaves the device, the
 policy changes in the same week — not at the next release.
 
-For Mellow specifically, the claim to watch is that the Android build ships
-without the `INTERNET` permission. It is checkable, which is what makes it worth
-saying; it is also the first thing that would quietly stop being true if the app
-ever took a dependency that wants the network.
+For Mellow and Habit Garden both, the claim to watch is that the Android build
+ships without the `INTERNET` permission. It is checkable, which is what makes it
+worth saying; it is also the first thing that would quietly stop being true if
+either app ever took a dependency that wants the network. Flutter adds
+`INTERNET` to debug and profile builds on its own, so the check has to be run
+against a release artifact:
+
+```bash
+aapt2 dump permissions build/app/outputs/flutter-apk/app-release.apk
+```
+
+Habit Garden additionally has an export feature, which Mellow does not. That
+makes its policy's claim narrower and worth reading carefully: nothing leaves
+the device *unless the user exports it themselves*, and where it goes after that
+is the user's choice, not the app's.
