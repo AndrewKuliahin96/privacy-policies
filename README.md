@@ -3,16 +3,24 @@
 Published policies for Kuliahin apps. Each app has one file, linkable on its
 own — app stores want a direct URL, not a page you have to navigate from.
 
-| App | Policy |
-| --- | --- |
-| Mellow Mood Tracker (Android, iOS) | [MELLOW_MOOD_PRIVACY_POLICY.md](MELLOW_MOOD_PRIVACY_POLICY.md) |
-| Habit Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) |
+| App | Policy | Support |
+| --- | --- | --- |
+| Mellow Mood Tracker (Android, iOS) | [MELLOW_MOOD_PRIVACY_POLICY.md](MELLOW_MOOD_PRIVACY_POLICY.md) | [MELLOW_MOOD_SUPPORT.md](MELLOW_MOOD_SUPPORT.md) |
+| Habit Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) | — |
 
 ## Adding another app
 
 Copy the pattern: one `<APP>_PRIVACY_POLICY.md` at the root, one row in the
 table. Keep the filenames stable — a store listing points at the URL, and
 renaming the file breaks a link that is hard to notice is broken.
+
+## Support pages
+
+The App Store will not accept a submission without a support URL, and it has to
+be a page rather than an email address. `<APP>_SUPPORT.md` covers that, and is
+worth writing properly rather than as a placeholder: for an app with no account
+and no server, most support questions have a fixed answer, and a page that
+answers them is faster for everyone than a mailbox that repeats them.
 
 ## Keeping them true
 
