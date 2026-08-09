@@ -53,9 +53,9 @@ later; on older versions the tap opens the app instead.
 
 ## Something else
 
-Open an issue in [this repository](https://github.com/AndrewKuliahin96/privacy-policies/issues),
-or use the developer contact address shown on the app's store listing — under
-**Contact the developer** on Google Play, or **App Support** on the App Store.
+Write to **kulagin.andrew38@gmail.com**, or open an issue in
+[this repository](https://github.com/AndrewKuliahin96/privacy-policies/issues)
+if you would rather it were public.
 
 Please say which phone and which OS version. For anything that looks like a
 crash, the store consoles already collect the report automatically, so the

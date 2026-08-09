@@ -72,9 +72,7 @@ wording stays in this file's history.
 
 ## Contact
 
-Questions about this policy can go to the developer contact address shown on
-the app's Google Play listing, under **Contact the developer**.
+Questions about this policy: **kulagin.andrew38@gmail.com**
 
-One address, kept in one place, so it cannot fall out of step with the one the
-store shows. To publish a direct address here as well, replace this paragraph
-with it.
+The same address is shown on the app's store listings, under **Contact the
+developer** on Google Play and **App Support** on the App Store.
