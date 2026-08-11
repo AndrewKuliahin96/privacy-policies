@@ -6,7 +6,7 @@ own — app stores want a direct URL, not a page you have to navigate from.
 | App | Policy | Support |
 | --- | --- | --- |
 | Mellow Mood Tracker (Android, iOS) | [MELLOW_MOOD_PRIVACY_POLICY.md](MELLOW_MOOD_PRIVACY_POLICY.md) | [MELLOW_MOOD_SUPPORT.md](MELLOW_MOOD_SUPPORT.md) |
-| Habit Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) | — |
+| Habit Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) | [HABIT_GARDEN_SUPPORT.md](HABIT_GARDEN_SUPPORT.md) |
 
 ## Adding another app
 
