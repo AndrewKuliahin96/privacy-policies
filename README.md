@@ -7,6 +7,7 @@ own — app stores want a direct URL, not a page you have to navigate from.
 | --- | --- | --- |
 | Mellow Mood Tracker (Android, iOS) | [MELLOW_MOOD_PRIVACY_POLICY.md](MELLOW_MOOD_PRIVACY_POLICY.md) | [MELLOW_MOOD_SUPPORT.md](MELLOW_MOOD_SUPPORT.md) |
 | Habit Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) | [HABIT_GARDEN_SUPPORT.md](HABIT_GARDEN_SUPPORT.md) |
+| Easy Piller · Таблетниця (Android, iOS) | [EASY_PILLER_PRIVACY_POLICY.md](EASY_PILLER_PRIVACY_POLICY.md) | [EASY_PILLER_SUPPORT.md](EASY_PILLER_SUPPORT.md) |
 
 ## Adding another app
 
@@ -28,8 +29,8 @@ A privacy policy is the one document that becomes a lie by standing still. When
 an app gains a permission, an SDK, or anything that leaves the device, the
 policy changes in the same week — not at the next release.
 
-For Mellow and Habit Garden both, the claim to watch is that the Android build
-ships without the `INTERNET` permission. It is checkable, which is what makes it
+For all three apps, the claim to watch is that the Android build ships without
+the `INTERNET` permission. It is checkable, which is what makes it
 worth saying; it is also the first thing that would quietly stop being true if
 either app ever took a dependency that wants the network. Flutter adds
 `INTERNET` to debug and profile builds on its own, so the check has to be run
@@ -39,7 +40,11 @@ against a release artifact:
 aapt2 dump permissions build/app/outputs/flutter-apk/app-release.apk
 ```
 
-Habit Garden additionally has an export feature, which Mellow does not. That
-makes its policy's claim narrower and worth reading carefully: nothing leaves
-the device *unless the user exports it themselves*, and where it goes after that
-is the user's choice, not the app's.
+Habit Garden and Easy Piller additionally have an export feature, which Mellow
+does not. That makes their policies' claim narrower and worth reading carefully:
+nothing leaves the device *unless the user exports it themselves*, and where it
+goes after that is the user's choice, not the app's.
+
+Easy Piller records medication, so its policy carries one extra sentence the
+other two do not need: the data is sensitive, which is the reason it stays
+where it is rather than a reason to handle it carefully somewhere else.
