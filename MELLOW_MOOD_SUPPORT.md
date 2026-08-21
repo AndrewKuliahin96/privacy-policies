@@ -15,12 +15,21 @@ The full detail is in the [privacy policy](MELLOW_MOOD_PRIVACY_POLICY.md).
 
 ## I deleted the app. Can I get my history back?
 
-No, and this is worth knowing before it happens. Because your entries never
-leave the device, uninstalling takes them with it — there is no copy anywhere
-for anyone to restore.
+Only from a file you exported yourself. Because your entries never leave the
+device, uninstalling takes them with it — nobody holds a copy that could be
+restored for you.
 
-An export is planned so that a copy is yours to keep. Until it ships, treat
-uninstalling as permanent.
+Since version 1.2.0, **Settings → Export** writes your whole history to a
+single file and hands it to the share sheet. A file you have sent somewhere —
+your email, your files, anywhere — survives the app. If you never exported,
+the history is gone, and that is worth knowing before it happens.
+
+## I am moving to a new phone. How do I bring my history?
+
+**Settings → Export** on the old phone, send the file to yourself, then
+**Settings → Import** on the new one and pick that file. Import replaces what
+is in the app with the contents of the file — it says so before it does it —
+so do it before you start logging days on the new phone, not after.
 
 ## How do I erase everything?
 
@@ -42,6 +51,7 @@ Two things to check, in this order:
 Because syncing needs a network, and this app has none. On Android you can
 confirm that yourself: it ships with no `INTERNET` permission at all, which is
 visible in Android's app info screen. That is the trade, made deliberately.
+Export and import move a history between devices instead.
 
 ## The home-screen widget is not updating
 
