@@ -46,6 +46,13 @@ does not. That makes their policies' claim narrower and worth reading carefully:
 nothing leaves the device *unless the user exports it themselves*, and where it
 goes after that is the user's choice, not the app's.
 
+Easy Piller's policy, since 14 October 2026, names the second way out as well:
+the phone's own backup and transfer, which carry its data on purpose and are
+held by Apple or Google under the user's account. It used to say nothing else
+existed, which had never been true. The same question — does the phone's own
+backup carry this app's data? — has not yet been asked of Habit Garden's and
+Mellow's policies.
+
 Easy Piller records medication, so its policy carries one extra sentence the
-other two do not need: the data is sensitive, which is the reason it stays
-where it is rather than a reason to handle it carefully somewhere else.
+other two do not need: the data is sensitive, which is the reason the app never
+collects or sends it rather than a reason to handle it carefully somewhere else.

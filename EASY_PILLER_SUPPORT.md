@@ -8,9 +8,13 @@ below rather than left for an email.
 
 ## Where is my data?
 
-On your phone, in the app's own private storage, and nowhere else. There is no
-account and no server. Nothing is uploaded, so there is nothing to log into and
-nothing for a support desk to recover.
+On your phone, in the app's own private storage. There is no account and no
+server. Nothing is uploaded to us, so there is nothing to log into and nothing
+for a support desk to recover.
+
+If your phone's own backup is turned on — iCloud or a computer backup on iPhone
+and iPad, the Google backup on Android — it includes the app's data too. That
+copy is made and held by Apple or Google under your account, not by us.
 
 The full detail is in the [privacy policy](EASY_PILLER_PRIVACY_POLICY.md).
 
@@ -56,7 +60,13 @@ phone's battery settings.
 
 **Ліки → Дані → Експортувати** writes everything to a single file and hands it
 to the share sheet. Send it to yourself however you like, then on the new phone
-use **Імпортувати** and pick that file.
+use **Імпортувати** and pick that file. This is the way that always works,
+including from Android to iPhone and back.
+
+If you move with your phone's own transfer, or set the new phone up from a
+backup of the old one, your medications may already be there when you open the
+app. That is the system's doing and has not been checked on every phone, so
+look before you rely on it — and keep the exported file until you have.
 
 Import **replaces** what is on the device rather than merging with it. Two
 phones with the same medication names and overlapping days have no honest way
@@ -65,8 +75,11 @@ about medication, which is the worst subject to be unsure about.
 
 ## I deleted the app. Can I get my history back?
 
-Only from a file you exported yourself. Because your record never leaves the
-device, uninstalling takes it with it. Export before you delete.
+From a file you exported yourself, or from your phone's own backup if it was
+turned on: on Android, reinstalling the app can restore it; on iPhone, only
+restoring the whole phone from a backup made before the app was deleted brings
+it back. We hold no copy, so there is nothing we can send you. Export before
+you delete.
 
 ## I finished a course. How do I get it off the Today screen?
 
