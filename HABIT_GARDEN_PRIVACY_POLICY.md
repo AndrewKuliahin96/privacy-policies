@@ -1,8 +1,8 @@
-# Privacy Policy — Habit Garden
+# Privacy Policy — Habits Garden
 
-**Last updated: 9 August 2026**
+**Last updated: 14 October 2026**
 
-Habit Garden does not collect any personal data.
+Habits Garden does not collect any personal data.
 
 There is no account to create, no server to sync with, and nothing is sent
 anywhere. This is not a promise about what we choose to do with your data — it

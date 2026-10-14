@@ -1,4 +1,4 @@
-# Support — Habit Garden
+# Support — Habits Garden
 
 A habit tracker that does not push. Plant a habit, tend it on the days you can,
 and watch it grow.
@@ -53,7 +53,7 @@ Three things to check, in this order:
 1. **Settings** in the app — the reminder toggle, and the time next to it.
 2. Whether a **quiet week** is running. It turns the reminder off for seven
    days and back on by itself.
-3. Your phone's own notification settings for Habit Garden. If notifications
+3. Your phone's own notification settings for Habits Garden. If notifications
    are switched off there, nothing the app does can override it.
 
 There is also a case where it is silent on purpose: the reminder is skipped on

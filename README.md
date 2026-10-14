@@ -6,7 +6,7 @@ own — app stores want a direct URL, not a page you have to navigate from.
 | App | Policy | Support |
 | --- | --- | --- |
 | Mellow Mood Tracker (Android, iOS) | [MELLOW_MOOD_PRIVACY_POLICY.md](MELLOW_MOOD_PRIVACY_POLICY.md) | [MELLOW_MOOD_SUPPORT.md](MELLOW_MOOD_SUPPORT.md) |
-| Habit Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) | [HABIT_GARDEN_SUPPORT.md](HABIT_GARDEN_SUPPORT.md) |
+| Habits Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) | [HABIT_GARDEN_SUPPORT.md](HABIT_GARDEN_SUPPORT.md) |
 | Easy Piller · Таблетниця (Android, iOS) | [EASY_PILLER_PRIVACY_POLICY.md](EASY_PILLER_PRIVACY_POLICY.md) | [EASY_PILLER_SUPPORT.md](EASY_PILLER_SUPPORT.md) |
 | Luma: Light Puzzle (iOS) | [LUMA_PRIVACY_POLICY.md](LUMA_PRIVACY_POLICY.md) | [LUMA_SUPPORT.md](LUMA_SUPPORT.md) |
 
@@ -41,7 +41,7 @@ against a release artifact:
 aapt2 dump permissions build/app/outputs/flutter-apk/app-release.apk
 ```
 
-Habit Garden and Easy Piller additionally have an export feature, which Mellow
+Habits Garden and Easy Piller additionally have an export feature, which Mellow
 does not. That makes their policies' claim narrower and worth reading carefully:
 nothing leaves the device *unless the user exports it themselves*, and where it
 goes after that is the user's choice, not the app's.
@@ -50,7 +50,7 @@ Easy Piller's policy, since 14 October 2026, names the second way out as well:
 the phone's own backup and transfer, which carry its data on purpose and are
 held by Apple or Google under the user's account. It used to say nothing else
 existed, which had never been true. The same question — does the phone's own
-backup carry this app's data? — has not yet been asked of Habit Garden's and
+backup carry this app's data? — has not yet been asked of Habits Garden's and
 Mellow's policies.
 
 Easy Piller records medication, so its policy carries one extra sentence the
