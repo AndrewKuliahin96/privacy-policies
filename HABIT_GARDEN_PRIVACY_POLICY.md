@@ -1,6 +1,6 @@
 # Privacy Policy — Habits Garden
 
-**Last updated: 15 October 2026**
+**Last updated: 16 October 2026**
 
 ## In short
 
@@ -102,6 +102,7 @@ your device.
 A few buttons in Settings open another app, and none of your garden goes with
 them:
 
+- **Privacy policy** (from version 1.2.0) opens this page in your browser.
 - **Rate the app** and **Our other apps** open this app's page, or our other
   apps' pages, in the App Store or Google Play. The app may also, once, ask the
   store to show its own rating dialog; whether it appears is up to Apple or
@@ -153,7 +154,8 @@ that there is no way for your garden to leave the device and that uninstalling
 deletes all of it: the device's own backup and transfer had always carried the
 garden, deliberately, and the app now says so instead of promising otherwise.
 The same day it started naming the buttons that open other apps (they arrived
-in version 1.1.0) and gave a direct contact address.
+in version 1.1.0) and gave a direct contact address. On 16 October 2026 it
+added the Settings link to this page, which arrives in version 1.2.0.
 
 ## Contact
 
