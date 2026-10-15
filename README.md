@@ -41,17 +41,19 @@ against a release artifact:
 aapt2 dump permissions build/app/outputs/flutter-apk/app-release.apk
 ```
 
-Habits Garden and Easy Piller additionally have an export feature, which Mellow
-does not. That makes their policies' claim narrower and worth reading carefully:
-nothing leaves the device *unless the user exports it themselves*, and where it
-goes after that is the user's choice, not the app's.
+All three store apps have an export feature (Mellow's since version 1.3.0),
+so none of their policies may say that nothing leaves the device: a file the
+user exports goes wherever the user sends it, which is the user's choice, not
+the app's.
 
-Easy Piller's policy, since 14 October 2026, names the second way out as well:
-the phone's own backup and transfer, which carry its data on purpose and are
-held by Apple or Google under the user's account. It used to say nothing else
-existed, which had never been true. The same question — does the phone's own
-backup carry this app's data? — has not yet been asked of Habits Garden's and
-Mellow's policies.
+And the phone's own backup and transfer carry each of the three apps' data on
+purpose, held by Apple or Google under the user's account. Easy Piller's
+policy names that since 14 October 2026, Mellow's and Habits Garden's since
+15 October 2026; each used to say nothing else existed, which had never been
+true. The promise all three make now is narrower and true: no account, nothing
+is sent to us, the data is on the device and in its own backup if that is on —
+the sentence each app shows from its next version on. If an app ever excludes
+its data from the backup, its policy changes the same week.
 
 Easy Piller records medication, so its policy carries one extra sentence the
 other two do not need: the data is sensitive, which is the reason the app never

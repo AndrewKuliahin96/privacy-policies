@@ -1,33 +1,68 @@
 # Privacy Policy — Habits Garden
 
-**Last updated: 14 October 2026**
+**Last updated: 15 October 2026**
 
-Habits Garden does not collect any personal data.
+## In short
 
-There is no account to create, no server to sync with, and nothing is sent
-anywhere. This is not a promise about what we choose to do with your data — it
-is a property of how the app is built.
+Habits Garden collects nothing about you and sends nothing to us. There is no
+account to create and no server to sync with, and the app contains no
+networking code at all. Your garden lives on your device — and in your
+device's own backup, if you have that turned on.
 
-## What the app stores, and where
+## What the app stores
 
-Everything you enter stays in the app's own private storage on your device:
-
-- the habits you plant: their names, icons, colours and how often you mean to
-  do them
+- the habits you plant: their names, icons, colours, flower shapes and how
+  often you mean to do them
 - which days you marked done, which you took as rest, and which you left
-- your settings: theme, garden palette, flower shape, calendar style, week
-  start, language, reminder time
+- when a habit was in the greenhouse, and habits you dug up, for thirty days
+- your settings: theme, garden palette, calendar style, whether the garden bed
+  shows and the flowers sway, week start, language, reminder time and quiet
+  week
+- up to seven dates on which the app was opened, and whether it has already
+  asked once for a rating — kept apart from your garden and used for nothing
+  else
+
+## Where it is stored
 
 Your habits and their days live in a SQLite database file inside the app's
 private support directory. Settings live in Android's `SharedPreferences` or
 iOS's `UserDefaults`. Both locations are sandboxed by the operating system: no
 other app can read them, and neither is visible in the Files app or through a
-USB connection.
+USB connection. There is no account, no sign-up and no sync, because there is
+no server for any of those to talk to.
 
-Uninstalling the app deletes all of it.
+On Android this is checkable rather than merely claimed: the build has **no
+`INTERNET` permission at all**, which Android shows in the app's info screen.
+Without that permission the operating system will not let the app open a
+network connection, so the app cannot send your garden anywhere — not by our
+decision, and not by our mistake. The iOS build contains no networking code
+for the same reason, though iOS has no equivalent permission to point at as
+proof.
 
-Habits you dig up are kept for 30 days so they can be restored, then removed
-permanently. Until then they are still in the database, hidden from the garden.
+The Android build requests exactly three permissions, all of them for the
+daily reminder: `POST_NOTIFICATIONS` to show it, `RECEIVE_BOOT_COMPLETED` to
+put the reminder back after the phone restarts, and `VIBRATE`.
+
+## Your device's own backup
+
+Your device can keep a copy of the app's data in its own backup, and the app
+lets it, so that your garden can come with you to a new phone:
+
+- **iPhone and iPad:** iCloud Backup, or a backup to your computer, includes
+  the app's data when it is turned on, and so does moving to a new device from
+  one of those backups or directly from the old one.
+- **Android:** the system backup to your Google account includes the app's
+  data when it is turned on, and so does the system's transfer to a new phone.
+  The one thing left out is the app's queue of upcoming reminders, which it
+  rebuilds after a restore.
+
+That copy is made by the operating system, not by the app. It is held by
+Apple or Google under your account and under their privacy policies
+([Apple](https://www.apple.com/legal/privacy/),
+[Google](https://policies.google.com/privacy)), or on your own computer. The
+developer cannot see it and receives nothing from it. If you would rather the
+app's data were not in that backup, turn the backup off — or, where your phone
+lets you choose apps, leave Habits Garden out of it.
 
 ## What the app does not do
 
@@ -35,31 +70,18 @@ permanently. Until then they are still in the database, hidden from the garden.
 - No third-party SDK that transmits anything.
 - No access to contacts, photos, location, health data, the camera, or the
   microphone.
-- No backup to any cloud service run by us.
-
-**The Android build has no `INTERNET` permission at all.** You can confirm this
-yourself in Android's app info screen. Without that permission the operating
-system will not let the app open a network connection, so there is no way for
-your garden to leave the device — not by design decision, not by accident, and
-not by a future bug.
-
-The Android build requests exactly three permissions, all of them for the daily
-reminder: `POST_NOTIFICATIONS` to show it, `RECEIVE_BOOT_COMPLETED` to put the
-reminder back after the phone restarts, and `VIBRATE`.
-
-The iOS build contains no networking code for the same reason, though iOS has no
-equivalent permission to point at as proof.
+- No backup or sync to any service run by us.
 
 ## Notifications
 
 If you turn on the daily reminder, the app schedules a local notification on
-your device at the time you choose. It is generated on the phone. No push
+your device at the time you choose. It is generated on the device. No push
 service is involved and no reminder passes through any server.
 
 The reminder is skipped on days when everything is already done, which the app
-works out on the device from data that never leaves it.
+works out on the device from the garden itself.
 
-## Data you export yourself
+## Export and import
 
 **Settings → Export** writes your whole garden to a JSON file and hands it to
 the system share sheet. From that point the file goes wherever you send it —
@@ -75,28 +97,67 @@ Neither feature needs a storage permission on Android: both go through the
 system's own pickers, which hand the app a single file rather than access to
 your device.
 
+## Buttons that open other apps
+
+A few buttons in Settings open another app, and none of your garden goes with
+them:
+
+- **Rate the app** and **Our other apps** open this app's page, or our other
+  apps' pages, in the App Store or Google Play. The app may also, once, ask the
+  store to show its own rating dialog; whether it appears is up to Apple or
+  Google, and a rating you give goes to the store under its policy, as any
+  store rating does.
+- **Feedback** opens your mail app with our address and a subject line naming
+  the app's version, your platform and your language. Nothing is sent unless
+  you send the email yourself; if you do, we receive what you wrote and your
+  email address, and use them only to answer you.
+
+## Who else sees your garden
+
+Nobody through the app — not the developer, not any third party. The only
+copies outside the app are the ones described here: your device's own backup,
+and any file you export yourself.
+
+## Deleting your data
+
+A habit you dig up is kept for 30 days so it can be restored, hidden from the
+garden, then removed permanently. Deleting the app removes everything it
+stored on the device.
+
+A copy can remain in your device's own backup until that backup is replaced
+or you delete it there, and restoring it can bring the garden back — on
+Android, reinstalling the app can restore it too. That is what the backup is
+for. The developer holds no copy, so there is nothing we could restore or
+delete for you.
+
 ## Children
 
 The app is not directed at children and collects nothing from anyone, of any
 age.
 
-## Google Play
+## App stores
 
-If you installed the app from Google Play, Google collects its own data about
-the installation under
-[Google's Privacy Policy](https://policies.google.com/privacy). That is between
-you and Google; the app itself neither sees nor receives any of it.
+If you installed the app from Google Play or the App Store, that store
+collects its own data about the installation under
+[Google's Privacy Policy](https://policies.google.com/privacy) or
+[Apple's Privacy Policy](https://www.apple.com/legal/privacy/). That is
+between you and them; the app itself neither sees nor receives any of it.
 
 ## Changes
 
 If this policy changes, the date at the top changes with it, and the previous
 wording stays in this file's history.
 
+On 15 October 2026 this policy stopped saying that nothing is sent anywhere,
+that there is no way for your garden to leave the device and that uninstalling
+deletes all of it: the device's own backup and transfer had always carried the
+garden, deliberately, and the app now says so instead of promising otherwise.
+The same day it started naming the buttons that open other apps (they arrived
+in version 1.1.0) and gave a direct contact address.
+
 ## Contact
 
-Questions about this policy can go to the developer contact address shown on
-the app's Google Play listing, under **Contact the developer**.
+Questions about this policy: **kulagin.andrew38@gmail.com**
 
-One address, kept in one place, so it cannot fall out of step with the one the
-store shows. To publish a direct address here as well, replace this paragraph
-with it.
+The same address is shown on the app's store listings, under **Contact the
+developer** on Google Play and **App Support** on the App Store.

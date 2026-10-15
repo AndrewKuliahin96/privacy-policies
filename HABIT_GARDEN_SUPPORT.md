@@ -8,9 +8,13 @@ below rather than left for an email.
 
 ## Where is my data?
 
-On your phone, in the app's own private storage, and nowhere else. There is no
-account and no server. Nothing is uploaded, so there is nothing to log into and
-nothing to recover from a support desk.
+On your phone, in the app's own private storage. There is no account and no
+server. Nothing is uploaded to us, so there is nothing to log into and nothing
+for a support desk to recover.
+
+If your phone's own backup is turned on — iCloud or a computer backup on iPhone
+and iPad, the Google backup on Android — it includes the app's data too. That
+copy is made and held by Apple or Google under your account, not by us.
 
 The full detail is in the [privacy policy](HABIT_GARDEN_PRIVACY_POLICY.md).
 
@@ -18,7 +22,13 @@ The full detail is in the [privacy policy](HABIT_GARDEN_PRIVACY_POLICY.md).
 
 **Settings → Export** writes everything to a single file and hands it to the
 share sheet. Send it to yourself however you like, then on the new phone use
-**Settings → Import** and pick that file.
+**Settings → Import** and pick that file. This is the way that always works,
+including from Android to iPhone and back.
+
+If you move with your phone's own transfer, or set the new phone up from a
+backup of the old one, your garden may already be there when you open the app.
+That is the system's doing and has not been checked on every phone, so look
+before you rely on it — and keep the exported file until you have.
 
 Import **replaces** the current garden rather than merging with it. Two gardens
 with the same habit names and overlapping days have no honest way to be
@@ -26,9 +36,11 @@ reconciled, and a silent merge would leave you unsure what you now have.
 
 ## I deleted the app. Can I get my garden back?
 
-Only from a file you exported yourself. Because your habits never leave the
-device, uninstalling takes them with it — there is no copy anywhere for anyone
-to restore. Export before you delete.
+From a file you exported yourself, or from your phone's own backup if it was
+turned on: on Android, reinstalling the app can restore it; on iPhone, only
+restoring the whole phone from a backup made before the app was deleted brings
+it back. We hold no copy, so there is nothing we can send you. Export before
+you delete.
 
 ## Why did my streak not break when I took a rest day?
 
@@ -79,7 +91,9 @@ setting stops it too, if you would rather set it once for every app.
 
 ## Something else
 
-Write to **kulagin.andrew38@gmail.com**, or open an issue in
+Write to **kulagin.andrew38@gmail.com** — **Settings → Feedback** opens your
+mail app with the address and the app's version already filled in — or open
+an issue in
 [this repository](https://github.com/AndrewKuliahin96/privacy-policies/issues)
 if you would rather it were public.
 
