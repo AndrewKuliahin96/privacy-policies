@@ -1,6 +1,6 @@
 # Privacy Policy — Easy Piller (Таблетниця)
 
-Last updated: 16 October 2026
+Last updated: 22 October 2026
 
 ## In short
 
@@ -26,9 +26,29 @@ ships **without the `INTERNET` permission**, which Android shows in the app's
 info screen. An app that cannot open a socket cannot send your medication list
 anywhere.
 
-The two permissions it does request are `POST_NOTIFICATIONS`, so reminders can
-appear, and `RECEIVE_BOOT_COMPLETED`, so a queued reminder survives a restart.
-A third, `VIBRATE`, is added by the notification library.
+These are the permissions it does request, and what each one is for:
+
+- `POST_NOTIFICATIONS` — so reminders can appear. On Android 13 and later
+  the app asks for it when you switch a reminder on, not before.
+- `RECEIVE_BOOT_COMPLETED` — so queued reminders survive a restart.
+- `VIBRATE` — added by the notification library, so a reminder can vibrate.
+- `WAKE_LOCK`, `FOREGROUND_SERVICE` and `ACCESS_NETWORK_STATE` — added by
+  WorkManager, a standard Android library, which the home-screen widget uses
+  to run the app's own code when you tap the widget's button and when the
+  widget redraws for a new day. WorkManager asks for these three in every app
+  that includes it, for kinds of task it can run: `WAKE_LOCK` lets a task
+  keep the device awake until it finishes, `FOREGROUND_SERVICE` lets a long
+  task run with a notification of its own, and `ACCESS_NETWORK_STATE` lets a
+  task wait until the device is online. None of Easy Piller's tasks runs with
+  a notification of its own or waits for a network. `ACCESS_NETWORK_STATE`
+  only lets the app see whether a connection exists: it cannot open one, and
+  without `INTERNET` nothing could be sent through it.
+
+One more entry, `com.easypiller.easy_piller.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`,
+is not a permission over your device at all. The AndroidX library declares it
+in the app's own name so that messages between parts of the app cannot come
+from another developer's app: Android grants it only to apps signed with the
+same key as Easy Piller.
 
 ## Your device's own backup
 
@@ -145,6 +165,13 @@ On 16 October 2026 it began to name the buttons that open another app — Rate
 the app, Our other apps, Feedback and Privacy policy — and the one-time
 rating request, which it had left out; and to say «device» where it said
 «phone», because the app runs on iPad and Android tablets too.
+
+On 22 October 2026 it began to name every permission the Android build
+requests. Since version 1.3.0, which brought the home-screen widget, the build
+has also requested `WAKE_LOCK`, `FOREGROUND_SERVICE` and
+`ACCESS_NETWORK_STATE`, added by the WorkManager library the widget runs on,
+and it carries the app-only entry AndroidX declares; this page named three
+permissions as if they were all.
 
 ## Contact
 

@@ -41,6 +41,12 @@ against a release artifact:
 aapt2 dump permissions build/app/outputs/flutter-apk/app-release.apk
 ```
 
+A policy that names the permissions an app requests has to name what that
+command prints, not what the app's own `AndroidManifest.xml` says: libraries
+merge theirs in without a word. Until 22 October 2026 Easy Piller's policy
+named three where its release build, since 1.3.0, asked for six — the other
+three added by WorkManager, which its widget library depends on.
+
 All three store apps have an export feature (Mellow's since version 1.3.0),
 so none of their policies may say that nothing leaves the device: a file the
 user exports goes wherever the user sends it, which is the user's choice, not
