@@ -1,6 +1,6 @@
 # Privacy Policy — Easy Piller (Таблетниця)
 
-Last updated: 22 October 2026
+Last updated: 6 November 2026
 
 ## In short
 
@@ -32,17 +32,6 @@ These are the permissions it does request, and what each one is for:
   the app asks for it when you switch a reminder on, not before.
 - `RECEIVE_BOOT_COMPLETED` — so queued reminders survive a restart.
 - `VIBRATE` — added by the notification library, so a reminder can vibrate.
-- `WAKE_LOCK`, `FOREGROUND_SERVICE` and `ACCESS_NETWORK_STATE` — added by
-  WorkManager, a standard Android library, which the home-screen widget uses
-  to run the app's own code when you tap the widget's button and when the
-  widget redraws for a new day. WorkManager asks for these three in every app
-  that includes it, for kinds of task it can run: `WAKE_LOCK` lets a task
-  keep the device awake until it finishes, `FOREGROUND_SERVICE` lets a long
-  task run with a notification of its own, and `ACCESS_NETWORK_STATE` lets a
-  task wait until the device is online. None of Easy Piller's tasks runs with
-  a notification of its own or waits for a network. `ACCESS_NETWORK_STATE`
-  only lets the app see whether a connection exists: it cannot open one, and
-  without `INTERNET` nothing could be sent through it.
 
 One more entry, `com.easypiller.easy_piller.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`,
 is not a permission over your device at all. The AndroidX library declares it
@@ -172,6 +161,17 @@ has also requested `WAKE_LOCK`, `FOREGROUND_SERVICE` and
 `ACCESS_NETWORK_STATE`, added by the WorkManager library the widget runs on,
 and it carries the app-only entry AndroidX declares; this page named three
 permissions as if they were all.
+
+On 4 November 2026, with version 1.8.0, the Android build stopped
+requesting `WAKE_LOCK`, `FOREGROUND_SERVICE` and `ACCESS_NETWORK_STATE`.
+WorkManager, the standard Android library the home-screen widget runs on,
+adds these three to every app that includes it, and none of Easy Piller's
+tasks used them: a tap on the widget's button and the redraw for a new day
+run without them. Versions 1.3.0 to 1.7.0 still request them. There,
+`WAKE_LOCK` lets a task keep the device awake until it finishes,
+`FOREGROUND_SERVICE` lets a long task run with a notification of its own, and
+`ACCESS_NETWORK_STATE` lets a task see whether the device is online; it cannot
+open a connection, and without `INTERNET` nothing could be sent through one.
 
 ## Contact
 
