@@ -1,23 +1,29 @@
 # Privacy Policy — Habits Garden
 
-**Last updated: 16 October 2026**
+**Last updated: 6 November 2026**
 
 ## In short
 
 Habits Garden collects nothing about you and sends nothing to us. There is no
-account to create and no server to sync with, and the app contains no
-networking code at all. Your garden lives on your device — and in your
+account to create and no server to sync with, and the app itself opens no
+network connection. Your garden lives on your device — and in your
 device's own backup, if you have that turned on.
 
 ## What the app stores
 
 - the habits you plant: their names, icons, colours, flower shapes and how
-  often you mean to do them
+  often you mean to do them, and, if you set them, a time, a reminder of their
+  own and a duration
+- a timer you start: how long it has left, and nothing about what you did
 - which days you marked done, which you took as rest, and which you left
 - when a habit was in the greenhouse, and habits you dug up, for thirty days
 - your settings: theme, garden palette, calendar style, whether the garden bed
   shows and the flowers sway, week start, language, reminder time and quiet
   week
+- on iPhone and iPad, a short summary for the home-screen widget: for today and
+  the next two weeks, the names, flowers and states of up to three habits
+- after an import, a copy of the garden it replaced, so that the import can be
+  undone once
 - up to seven dates on which the app was opened, and whether it has already
   asked once for a rating — kept apart from your garden and used for nothing
   else
@@ -28,19 +34,19 @@ Your habits and their days live in a SQLite database file inside the app's
 private support directory. Settings live in Android's `SharedPreferences` or
 iOS's `UserDefaults`. Both locations are sandboxed by the operating system: no
 other app can read them, and neither is visible in the Files app or through a
-USB connection. There is no account, no sign-up and no sync, because there is
+USB connection. The widget's summary sits in a container that only this app and
+its own widget can open; the widget reads nothing else. There is no account, no sign-up and no sync, because there is
 no server for any of those to talk to.
 
 On Android this is checkable rather than merely claimed: the build has **no
 `INTERNET` permission at all**, which Android shows in the app's info screen.
 Without that permission the operating system will not let the app open a
 network connection, so the app cannot send your garden anywhere — not by our
-decision, and not by our mistake. The iOS build contains no networking code
-for the same reason, though iOS has no equivalent permission to point at as
-proof.
+decision, and not by our mistake. The iOS build opens no network connection
+either, though iOS has no equivalent permission to point at as proof.
 
-The Android build requests exactly three permissions, all of them for the
-daily reminder: `POST_NOTIFICATIONS` to show it, `RECEIVE_BOOT_COMPLETED` to
+The Android build requests exactly three permissions, all of them for
+reminders: `POST_NOTIFICATIONS` to show it, `RECEIVE_BOOT_COMPLETED` to
 put the reminder back after the phone restarts, and `VIBRATE`.
 
 ## Your device's own backup
@@ -74,8 +80,9 @@ lets you choose apps, leave Habits Garden out of it.
 
 ## Notifications
 
-If you turn on the daily reminder, the app schedules a local notification on
-your device at the time you choose. It is generated on the device. No push
+If you turn on the daily reminder, or give a habit a reminder of its own, the
+app schedules local notifications on your device at the times you choose. They
+are generated on the device. No push
 service is involved and no reminder passes through any server.
 
 The reminder is skipped on days when everything is already done, which the app
@@ -92,6 +99,9 @@ not choose.
 
 **Settings → Import** reads a file you pick through the system file picker and
 replaces the current garden with it. The app sees only the file you select.
+Before replacing anything it keeps a private copy of the current garden, on the
+device, so that **Undo last import** can bring it back once. That copy goes when
+you use it or when you import again.
 
 Neither feature needs a storage permission on Android: both go through the
 system's own pickers, which hand the app a single file rather than access to
@@ -116,14 +126,15 @@ them:
 ## Who else sees your garden
 
 Nobody through the app — not the developer, not any third party. The only
-copies outside the app are the ones described here: your device's own backup,
-and any file you export yourself.
+copies outside the app and its widget are the ones described here: your device's
+own backup, and any file you export yourself.
 
 ## Deleting your data
 
-A habit you dig up is kept for 30 days so it can be restored, hidden from the
-garden, then removed permanently. Deleting the app removes everything it
-stored on the device.
+A habit you dig up is kept for 30 days so it can be restored from the Herbarium,
+hidden from the garden, then removed permanently. If you import a file during
+those days, the copy kept for undoing that import can still hold the habit until
+that copy goes. Deleting the app removes everything it stored on the device.
 
 A copy can remain in your device's own backup until that backup is replaced
 or you delete it there, and restoring it can bring the garden back — on
