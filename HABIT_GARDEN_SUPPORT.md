@@ -73,9 +73,10 @@ days when everything is already done. A nudge about a finished garden is noise.
 
 ## A habit disappeared
 
-Two possibilities. If you put it in the **greenhouse** it is paused, not gone —
-open any habit's page to find the greenhouse and bring it back. If you **dug it
-up**, it is recoverable for thirty days, after which it is removed for good.
+Two possibilities. If you put it in the **greenhouse** it is paused, not gone:
+from version 1.5.0 it is listed under **Garden → Herbarium**, where it opens and
+can be brought back. If you **dug it up**, it is listed there too for thirty days,
+with an Undo button, after which it is removed for good.
 
 ## Why is there no sync between my devices?
 
