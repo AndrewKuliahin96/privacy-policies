@@ -9,6 +9,7 @@ own — app stores want a direct URL, not a page you have to navigate from.
 | Habits Garden (Android, iOS) | [HABIT_GARDEN_PRIVACY_POLICY.md](HABIT_GARDEN_PRIVACY_POLICY.md) | [HABIT_GARDEN_SUPPORT.md](HABIT_GARDEN_SUPPORT.md) |
 | Easy Piller · Таблетниця (Android, iOS) | [EASY_PILLER_PRIVACY_POLICY.md](EASY_PILLER_PRIVACY_POLICY.md) | [EASY_PILLER_SUPPORT.md](EASY_PILLER_SUPPORT.md) |
 | Luma: Light Puzzle (iOS) | [LUMA_PRIVACY_POLICY.md](LUMA_PRIVACY_POLICY.md) | [LUMA_SUPPORT.md](LUMA_SUPPORT.md) |
+| Lahidno · Лагідно (iOS, macOS) | [LAHIDNO_PRIVACY_POLICY.md](LAHIDNO_PRIVACY_POLICY.md) | [LAHIDNO_SUPPORT.md](LAHIDNO_SUPPORT.md) |
 
 ## Adding another app
 
