@@ -30,12 +30,15 @@ per-medication and entirely optional.
 
 ## My reminder arrived a few minutes late
 
-That is intended, and the app says so under the exact-time switch: *"Приблизно
-у цей час"*. Reminders are scheduled inexactly.
+Your phone may deliver a reminder later than the time you selected, especially
+when it has been idle. Reminders for a part of the day use approximate timing.
 
-Android grants exact alarms only to apps built around them, and asking for that
-privilege would contradict the one idea this app is built on. A nudge near a
-time is what it promises and what it delivers. It is not an alarm clock.
+Starting with Easy Piller 1.10.0 on Android 12 and later, choose a time for a
+dose in the medication editor. You can then open **Alarms & reminders** and
+allow Easy Piller to schedule that dose more precisely. You can change this
+access in Android settings. Ordinary reminders still work without it.
+Android limits how often an app can wake a sleeping phone, so several doses
+scheduled close together can still arrive late.
 
 ## A reminder did not arrive at all
 

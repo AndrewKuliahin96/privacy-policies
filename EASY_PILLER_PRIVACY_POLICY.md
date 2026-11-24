@@ -1,6 +1,6 @@
 # Privacy Policy — Easy Piller (Таблетниця)
 
-Last updated: 6 November 2026
+Last updated: 24 November 2026
 
 ## In short
 
@@ -30,6 +30,11 @@ These are the permissions it does request, and what each one is for:
 
 - `POST_NOTIFICATIONS` — so reminders can appear. On Android 13 and later
   the app asks for it when you switch a reminder on, not before.
+- Starting with Easy Piller 1.10.0, `SCHEDULE_EXACT_ALARM` lets Android
+  schedule a reminder more precisely for a dose with a time you chose.
+  On Android 12 and later, you can grant this access in system settings.
+  This permission controls timing only. Medication data stays on your device
+  and in any device backup you enable. Ordinary reminders work without it.
 - `RECEIVE_BOOT_COMPLETED` — so queued reminders survive a restart.
 - `VIBRATE` — added by the notification library, so a reminder can vibrate.
 
